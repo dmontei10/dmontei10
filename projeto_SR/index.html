@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="…"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./assets/stylesheets/main.css">
+
+  <link REL="shortcut icon" href="./media/robot.jpg" type="image/x-icon">
+
+  <title>Projeto de Sistemas de Robótica</title>
+</head>
+
+<body>
+
+  <nav class="navbar  navbar-inverse navbar-expand-sm navbar-expand-lg navbar-togele navbar-dark bg-primary">
+
+    <img src="./media/robot.jpg" alt="Logotipo" style="width:60px; border-radius: 30px;">
+    <a class="navbar-brand ml-2" href="index.html"> Sistemas de Robótica</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html"> <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        </li>
+        <li class="nav-item  ">
+          <a id="cobra" onclick="clicarCobra()" style="width:auto;" class="nav-link" href="#"><i class="fa fa-android"
+              aria-hidden="true"></i> Cobra600</a>
+        </li>
+        <li class="nav-item ">
+          <a id="irb" onclick="clicarIrb()" style="width:auto;" class="nav-link" href="#"><i class="fa fa-android"
+              aria-hidden="true"></i> Irb140</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+  <!----------------------------------------------------------NAVBAR-------------------------------------------------------------->
+  <!----------------------------------------------------------CAROUSEL-------------------------------------------------------------->
+
+  <header>
+    <section>
+      <div id="carouselExampleIndicators" class="carousel " data-ride="carousel">
+
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img class="img-fluid d-block w-100 " src="./media/cobra2.gif" alt="COBRA 600">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>COBRA 600</h1>
+              <h3 class="lead"> Projeto de Sistemas de Robótica</h3>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="img-fluid d-block w-100" src="./media/cobra.gif" alt="IRB140">
+            <div class="carousel-caption d-none d-md-block ">
+              <h1>IRB 140</h1>
+              <h3 class="lead"> Projeto de Sistemas de Robótica</h3>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+        <div class="container mt-5">
+          <h1>Projeto de Sistemas de Robótica</h1>
+          <h5 class="mt-5">Este projeto foi elaborado por alunos da Universidade Autónoma de Lisboa e abordou os robots COBRA 600 e IRB 140</h5>
+          <ul><br>
+			<li>Bruno Matos &emsp;<i class="fas fa-envelope ml-3"> 30006804@students.ual.pt</i></li>
+            <li>Bruno Silva &emsp;&ensp;&nbsp;<i class="fas fa-envelope ml-3"> 30003769@students.ual.pt</i> </li>
+            <li>David Monteiro<i class="fas fa-envelope ml-3"> 30003043@students.ual.pt</i> </li>
+            <li>Nuno Barrocas <i class="fas fa-envelope ml-3"> 30005711@students.ual.pt</i></li>
+          </ul>
+        </div>
+        <div class="container mt-5">
+          <h1>Referências</h1>
+          <p>[1] <a href="https://search.abb.com/library/Download.aspx?DocumentID=PR10031EN_R15_HR&LanguageCode=en&DocumentPartId=&Action=Launch">Document IRB 140</a></p>
+          <p>[2] <a href="https://search.abb.com/library/Download.aspx?DocumentID=3HAC041346-001&LanguageCode=en&DocumentPartId=&Action=Launch">Product Specification IRB 140</a></p>
+          <p>[3] <a href="https://www.researchgate.net/publication/267450857_Kinematics_Dynamics_and_Evaluation_of_Energy_Consumption_for_ABB_IRB-140_Serial_Robots_in_the_Tracking_of_a_Path">Kinematics Dynamics and Evaluation of Energy Consumption for ABB IRB-140 Serial Robots in the Tracking of a Path</a></p>
+          <p>[4] <a href="https://assets.omron.eu/downloads/datasheet/en/v15/i822_industrial_robots_datasheet_en.pdf"> Industrial Robots - COBRA 600</a></p>
+          <p>[5] <a href="https://products.omron.us/Asset/Omron-Adept-Cobra-s600s800-Robot_UG_EN_201602_R64IE01.pdf">Omron COBRA 600</a></p>
+          <p>[6] <a href="https://www.htetechnologies.com/data/siteshare/Article/byid/1006/files/Cobra.pdf">Article Cobra</a></p>
+  
+        </div>
+      </div>
+      
+     
+    </section>
+  </header>
+  <!----------------------------------------------------------CAROUSEL-------------------------------------------------------------->
+
+  <section class="container  mt-5 mr-5 ">
+    <div id="cobra600">
+      <div class="col-12 text-center">
+        <h2>COBRA 600</h2>
+        <img class="container" src="./media/cobra2.gif" alt="cobra600" style="width:300px; border-radius: 60px;">
+      </div>
+
+
+      <div class="row mb-5 mt-5">
+
+        <div class="col-3">
+
+          <nav class="navbarVertical navbar navbar-light bg-light">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#">Cobra 600</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3" href="#item1-1">Introdução</a>
+                <a class="nav-link ml-3" href="#item1-2">Funcionalidades</a>
+                <a class="nav-link ml-3" href="#item1-3">Denavit–Hartenberg</a>
+				<a class="nav-link ml-3" href="#item1-4">Código MatLab</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+
+
+        <div class="col-9">
+
+          <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+            <h3 id="item1-1">Introdução</h3>
+            <p>Para o presente trabalho o grupo de trabalho propôs-se analisar de forma detalhada o robot COBRA600.
+              O robot em causa foi desenvolvido pela empresa multinacional japonesa Omron que tem como sede Quioto.
+              Os parâmetros de Denavit–Hartenberg (também chamados de parâmetros DH) são quatro parâmetros associados
+              para fixar sistemas de referência aos elos de uma cadeia cinemática espacial, ou manipulador robótico.
+            </p>
+            <figure>
+              <img src="./media/parametrosdh.jpg" width="170" height="130" alt="ParametrosDH">
+              <figcaption> Figura 1- Parâmetros DH </figcaption>
+            </figure>
+            <p><br>Para este relatório foi utilizado o MatLab, com recurso à Toolbox do Peter Corke.</p>
+
+            <h3 id="item1-2" class="mt-5">Funcionalidades</h3>
+            <p>De modo a compreender as funcionalidades do COBRA 600
+              é importante entender onde se encontram os eixos do robô. A figura 1 representa um
+              design feito com computador do robot em estudo e as letras (A-D)
+              representam os seus quatro eixos, já a tabela 1 indica que eixo cada letra representa.
+            </p>
+            <figure>
+              <img src="./media/Imagem5.jpg" width="300" height="260" alt="cobra 600">
+              <figcaption> Figura 2- COBRA 600 e os seus seis eixos</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./media/tabela_Eixos_cobra.JPG" width="400" height="150" alt="eixos cobra">
+			  <figcaption>Tabela 1 - Descrição dos eixos do robot COBRA 600</figcaption>
+            </figure><br>
+
+            <p>A tabela 2 e 3 demonstra de forma compacta as especificações técnicas do COBRA 600.</p>
+
+            <figure>
+              <img src="./media/tabela2.JPG" width="400" height="250" alt="Especificações do cobra">
+			  <figcaption> Tabela 2 - Especificações Técnicas do COBRA 600</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./media/AREA_TRABALHO_VELOCIDADE.JPG" width="300" height="150"
+                alt="área de trabalho e Velocidadade">
+				<figcaption> Tabela 3 - Área de Trabalho e Velocidadade de cada eixo do COBRA 600</figcaption>
+            </figure><br>
+
+            <p>O COBRA 600 é um robô industrial multifuncional de quatro graus de liberdade ou degrees of freedom (DOF),
+              compacto, com longo alcance (até 600mm) e
+              capaz de processar cargas úteis de 5.5 kg.
+              Pode ser montado no chão ou numa mesa.
+              É um robot fácil de integrar e pode ser utilizado numa variedade de aplicações.
+              Este robot está disponível nas versões Standard e Pro.
+            </p>
+            <p>
+              Como já foi referido anteriormente o COBRA 600 é um robot de quatro eixos que pode ser montado no chão ou
+              numa mesa como demonstra a seguinte figura:
+            </p>
+
+            <figure>
+              <img src="./media/cobra600 montagem.png" width="300" height="300" alt="cobraa600">
+              <figcaption> Figura 3 - Cobra 600 montagem de forma Standard</figcaption>
+            </figure><br>
+
+            <figure>
+              <img src="./media/cobra600 montagem2.jpg" width="300" height="300" alt="cobra6002">
+              <figcaption> Figura 4 - Cobra 600 montagem de forma Standard</figcaption>
+            </figure><br>
+
+            <p>A figura 3 tem ainda uma área limitada por linhas curvas exteriores que representam a área de
+              trabalho do COBRA 600 para cada posição de montagem.</p>
+            <p>Este robot pode ser utilizado numa variedade de aplicações como manuseamento de materiais, montagem,
+              embalagem, tratamento de máquinas, aparafusamento e outras aplicações que requerem automação rápida e
+              precisa. Dependendo do modelo o COBRA 600 será mais apropriado para diferentes tarefas/ambientes, como é o
+              caso das versões COBRA 600 Standard e Cleanroom, que têm proteções que os tornam adequados para operar em
+              ambientes de fundição e outros ambientes hostis com altos requisitos de resistência à corrosão.</p>
+            <p>Já a versão Standard é indicada para um ambiente industrial normal, enquanto a versão Clean Room foca-se
+              em ambientes de sala limpa. </p>
+            <p>Um end-effector, que carrega no máximo 5.5 kg, está situado no eixo 4. </p>
+            <p>O robô está equipado com o controlador iCS-ECAT e um software de controle do robot chamado Sysmac Studio
+              64-bit que oferece suporte a todos os aspectos do sistema do robot, como o controlo do movimento, do
+              desenvolvimento e execução de programas aplicativos, comunicação, entre outros. É possível conectar um controlador
+              chamado Omron NJ501-R Series.</p>
+
+            <h3 id="item1-3" class="mt-5">Denavit–Hartenberg</h3>
+            <p>Para obter os parametros DH através do MatLab deve-se usar o comando <strong>mdl_cobra600.</strong></p>
+            <figure>
+              <img src="./media/output_mdl_cobra600.jpg" width="450" height="300" alt="output">
+              <figcaption> Figura 5 - Output do comando mdl_cobra600</figcaption>
+            </figure><br>
+
+            <p>O comando mdl_cobra600 cria 1 pose, qz que representa a configuração canónica do COBRA 600 apresentada na
+              seguinte figura.</p>
+
+            <figure>
+              <img src="./media/posicao_qz.png" width="300" height="200" alt="pos_qz">
+              <figcaption> Figura 6 - COBRA 600 na posição qz</figcaption>
+            </figure><br>
+
+            <p>Foram criadas outras 2 poses, qr e qs, que definem o máximo que o robot consegue alcançar, tanto para um
+              lado como para o outro. </p>
+            <br>
+
+            <p><strong>>> qr = [pi/4 pi/2 0 0]</strong></p>
+
+            <figure>
+              <img src="./media/cobra600_posicao_qr.jpg" width="300" height="200" alt="pos_qr">
+              <figcaption> Figura 7 - COBRA 600 na posição qr</figcaption>
+            </figure><br>
+
+            <p><strong> >> qs = [-pi/4 -pi/2 0 0] </strong></p>
+            <figure>
+              <img src="./media/cobra600_posicao_qs.jpg" width="300" height="200" alt="pos_qs">
+              <figcaption> Figura 8 - COBRA 600 na posição qs</figcaption>
+            </figure><br>
+
+            <p>As figuras anteriores foram geradas no MatLab com o auxílio do comando <strong>c600.plot().</strong></p>
+            <p>De seguida utilizamos o comando<strong> fkine </strong> para qualquer a cinemática direta das poses
+              anteriormente indicadas.</p><br>
+
+            <p><strong>>> T1 = c600.fkine(qr)</strong></p>
+            <figure>
+              <img src="./media/fkine_qr.png" width="400" height="250" alt="pos_qs">
+              <figcaption> Figura 9 - comando fkine na posição qr</figcaption>
+            </figure><br>
+
+            <p><strong> >> T3 = c600.fkine(qs)</strong></p>
+            <figure>
+              <img src="./media/fkine_qs.png" width="400" height="250" alt="pos_qs">
+              <figcaption> Figura 10 - comando fkine na posição qs</figcaption>
+            </figure><br>
+
+            <p><strong> >> T2 = c600.fkine(qz)</strong></p>
+            <figure>
+              <img src="./media/fkine_qz.png" width="400" height="250" alt="pos_qs">
+              <figcaption> Figura 11 - comando fkine na posição qz</figcaption>
+            </figure><br>
+
+            <p>Utilizamos o comando <strong>ikine</strong> para computar a forma fechada da cinemática inversa.</p>
+
+            <p><strong> >> q1 = c600.ikine(T1, 'mask', [1 1 1 0 0 0])</strong></p>
+            <figure>
+              <img src="./media/q1_ikine.png" width="300" height="60" alt="pos_qs">
+              <figcaption> Figura 12 -comando ikine</figcaption>
+            </figure><br>
+
+            <p><strong>>> q2 = c600.ikine(T2, 'mask', [1 1 1 0 0 0])</strong></p>
+            <figure>
+              <img src="./media/q2_ikine.png" width="300" height="60" alt="pos_qs">
+              <figcaption> Figura 13 - comando ikine</figcaption>
+            </figure><br>
+
+            <p><strong> >> q3 = c600.ikine(T3, 'mask', [1 1 0 0 0 0])</strong></p>
+            <figure>
+              <img src="./media/q3_ikine.png" width="300" height="60" alt="pos_qs">
+              <figcaption> Figura 14 - comando ikine </figcaption>
+            </figure><br>
+
+			<p>Por fim, mostramos as várias trajetórias dos movimentos do robot COBRA 600.</p>
+
+            <p><strong> >> qzr = jtraj(qz,qr,75); </strong></p>
+            <p><strong> >> c600.plot(qzr) </strong></p>
+            <figure>
+              <img src="./media/movimento_qzr.gif" width="300" height="300" alt="mov_qzr">
+              <figcaption> Figura 15 - movimento da posição qz = [0 0 0 0] para a posição qr = [pi/4 pi/2 0 0] </figcaption>
+            </figure><br>
+
+            <p><strong> >> qzs = jtraj(qz,qs,75); </strong></p>
+            <p><strong> >> c600.plot(qzs) </strong></p>
+            <figure>
+              <img src="./media/movimento_qzs.gif" width="300" height="300" alt="mov_qzs">
+              <figcaption> Figura 16 - movimento da posição qz = [0 0 0 0] para a posição qs = [-pi/4 -pi/2 0 0]</figcaption>
+            </figure><br>
+
+            <p><strong> >> qsr = jtraj(qs,qr,75); </strong></p>
+            <p><strong> >> c600.plot(qsr) </strong></p>
+            <figure>
+              <img src="./media/movimento_qsr.gif" width="300" height="300" alt="mov_qsr">
+              <figcaption> Figura 17 - movimento da posição qs = [-pi/4 -pi/2 0 0] para a posição qr = [pi/4 pi/2 0 0]</figcaption>
+            </figure><br>
+
+            <p>Para experimentarmos vários movimentos com todos os eixos do cobra 600 usamos o seguinte comando:</p>
+            <p><strong>>> teach(c600)</strong></p>
+            <figure>
+              <img src="./media/teach.gif" width="300" height="300" alt="mov_qsr">
+              <figcaption> Figura 18 - comando teach(c600)</figcaption>
+            </figure><br>
+			
+			<h3 id="item1-4" class="mt-5">Código MatLab</h3><br>
+			<p>>> mdl_cobra600</p>
+			<p>>> qr = [pi/4 pi/2 0 0]</p>
+			<p>>> qs = [-pi/4 -pi/2 0 0]</p>
+			<p>>> teach(c600)</p>
+			<p>>> T1 = c600.fkine(qr)</p>
+			<p>>> T2 = c600.fkine(qz)</p>
+			<p>>> T3 = c600.fkine(qs)</p>
+			<p>>> q1 = c600.ikine(T1, 'mask', [1 1 1 0 0 0])</p>
+			<p>>> q2 = c600.ikine(T2, 'mask', [1 1 1 0 0 0])</p>
+			<p>>> q3 = c600.ikine(T3, 'mask', [1 1 0 0 0 0])</p>
+			<p>>> qzr = jtraj(qz,qr,75);</p>
+			<p>>> c600.plot(qzr)</p>
+			<p>>> qzs = jtraj(qz,qs,75);</p>
+			<p>>> c600.plot(qzs)</p>
+			<p>>> qsr = jtraj(qs,qr,75);</p>
+			<p>>> c600.plot(qsr)</p>
+			
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-------------------------------------------------------------------------------------------------------------------------------->
+  <section class="container mt-5 mr-5 ">
+    <div id="irb140" class="row">
+      <div class="col-12 text-center">
+        <h2>IRB 140</h2>
+        <img class="container" src="./media/cobra.gif" alt="cobra600" style="width:300px; border-radius: 60px;">
+
+      </div>
+
+      <div class="row mb-5 mt-5">
+        <div class="col-3">
+
+          <nav class=" navbar navbar-light bg-light">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#">Irb 140</a>
+
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3" href="#item1-4">Introdução</a>
+                <a class="nav-link ml-3" href="#item1-5">Funcionalidade</a>
+                <a class="nav-link ml-3" href="#item1-6">Denavit–Hartenberg</a>
+				<a class="nav-link ml-3" href="#item1-7">Código MatLab</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+
+        <div class="col-9">
+
+          <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+            <h3 id="item1-4">Introdução</h3>
+            <p> Para o presente trabalho o grupo de trabalho propôs-se analisar de forma detalhada o robot IRB 140.</p>
+            <p>O robot em causa foi desenvolvido pela empresa multinacional ABB Robotics que tem como sede Zurique. A
+              ABB encontra-se hoje em mais de 100 países.</p>
+            <p>Os parâmetros de Denavit–Hartenberg (também chamados de parâmetros DH) são quatro parâmetros associados
+              para fixar sistemas de referência aos elos de uma cadeia cinemática espacial, ou manipulador robótico.</p>
+            <figure>
+              <img src="./media/parametrosdh.jpg" width="170" height="130" alt="ParametrosDH">
+              <figcaption> Figura 1- Parâmetros DH </figcaption>
+            </figure><br>
+            <p>Para este relatório foi utilizado o MatLab, com recurso à Toolbox do Peter Corke.</p>
+
+            <h3 id="item1-5" class="mt-5">Funcionalidade</h3>
+            <p>De modo a compreender as funcionalidades do IRB 140 é importante entender onde se encontram os eixos do
+              robô. A figura 1 representa um design feito com computador do robot em estudo e as letras (A-F)
+              representam os seus seis eixos, já a tabela 1 indica que eixo cada letra representa.</p>
+            <figure>
+              <img src="./media/irb_eixos.png" width="300" height="400" alt="ParametrosDH">
+              <figcaption> Figura 2- IRB 140 e os seus eixos </figcaption>
+            </figure>
+            <figure>
+              <img src="./media/descricao_irb_eixos.JPG" width="300" height="150" alt="ParametrosDH">
+              <figcaption> Tabela 1- Descrição dos eixos IRB 140 </figcaption>            
+			</figure><br>
+
+            <p>A tabela 2 e 3 demonstra de forma compacta as especificações técnicas do IRB 140.</p>
+            <figure>
+              <img src="./media/ESPECIFICACOES_IRB140.JPG" width="400" height="300" alt="Especificações do IRB">
+              <figcaption> Tabela 2 - Especificações Técnicas do IRB 140</figcaption>
+			</figure><br>
+
+            <figure>
+              <img src="./media/VELOCIDADE_EIXO.JPG" width="300" height="190"
+                alt="área de trabalho e Velocidadade IRB140">
+              <figcaption> Tabela 3 - Área de Trabalho e Velocidadade de cada eixo do IRB 140</figcaption>
+            </figure><br>
+
+            <p> O IRB 140 é um robô industrial multifuncional de seis graus de liberdade ou degrees of freedom (DOF),
+              compacto, com longo alcance (até 810mm) e capaz de processar cargas úteis de 6 kg. É importante referir
+              que pode ser montado em qualquer posição/ângulo, ou seja pode ser instalado no chão, invertido ou na
+              parede. É um robot fácil de integrar e pode ser utilizado numa variedade de aplicações. De salientar ainda
+              que este robot está disponível nas versões Standard, Foundry Plus 2, Clean Room e Wash.</p>
+
+            <p>Como já foi referido anteriormente o IRB 140 é um robot de seis eixos que pode ser montado em qualquer 
+              ângulo como demonstram as seguintes figuras:</p>
+
+              <figure>
+                <img src="./media/irb_parede.png" width="150" height="150" alt="IRB montado parede">
+                <figcaption> Figura 2 - IRB 140 montado na parede</figcaption>
+              </figure><br>
+  
+              <figure>
+                <img src="./media/irb_standard.png" width="150" height="150" alt="IRB montado standard">
+                <figcaption> Figura 3 -IRB 140 montado de forma Standard</figcaption>
+              </figure><br>
+
+              <figure>
+                <img src="./media/irb_invertida.png"width="150" height="150" alt="IRB montado invertido">
+                <figcaption> Figura 4 -IRB 140 montado de forma invertida</figcaption>
+              </figure><br>
+
+
+              <p>As figuras anteriores têm ainda uma área limitada por 
+                linhas vermelhas que representa a área de trabalho 
+                do IRB 140 para cada posição de montagem.</p>
+
+              <p>Foi ainda referido que este robot pode ser utilizado numa variedade de aplicações, das quais se destaca, soldagem a arco,
+                 montagem, limpeza/pulverização, manutenção de máquinas, manuseio de materiais, embalagem e
+                  rebarbação. Dependendo do modelo o IRB 140 será mais apropriado para diferentes tarefas/ambientes, como
+                   é o caso das versões IRB 140 Foundry Plus e Wash, que têm proteções que os fazem adequados para operar em
+                 ambientes de fundição e outros ambientes hostis com altos requisitos de resistência à corrosão.</p>
+
+              <p>Já a versão Standard é indicada para um ambiente 
+                industrial normal, enquanto
+                 a versão Clean Room foca-se em ambientes de sala limpa. </p>
+
+              <p>Um end-effector, que carrega no máximo 6 kg, incluindo carga útil, pode ser montado no eixo 6.
+                 Outro o equipamento, com peso máximo até 1,5 kg, pode ser montado no braço superior.</p>
+
+              <p>As definições das áreas de carga e carga permitida são mostradas na Figura abaixo. 
+                O centro da gravidade da carga extra deve estar dentro das áreas de carga marcadas.</p>
+                
+                <figure>
+                  <img src="./media/areas_carga.png"width="300" height="250" alt="areas de carga irb">
+                  <figcaption> Figura 5 - Áreas de carga IRB 140</figcaption>
+                </figure><br>
+
+                <figure>
+                  <img src="./media/tabela_area_carga.JPG"width="250" height="150" alt="tabela das areas de carga irb">
+                  <figcaption> Tabela 4 - Tabela das áreas de carga IRB 140</figcaption>
+                </figure><br>
+
+              <p>O robô está equipado com o controlador IRC5 e um software de controle do robot chamado RobotWare, que oferece suporte a todos os aspectos do sistema do robot, 
+                  como o controlo do movimento, 
+                  do desenvolvimento e execução de programas aplicativos, comunicação etc.</p>
+
+            <h3 id="item1-6" class="mt-5">Denavit–Hartenberg</h3>
+
+            <p>Para obter os parametros DH através do MatLab deve-se usar o comando <strong> mdl_irb140 </strong>.</p>
+            <figure>
+              <img src="./media/md_irb140.png"width="450" height="300" alt="output mdl_irb140">
+              <figcaption> Figura 6 - Output do comando mdl_irb140 </figcaption>
+            </figure><br>
+
+            <p>O comando  mdl_irb140 cria 3 poses,<strong>   qd, qr e qz </strong> que representam as configurações canónicas do IRB 140 apresentadas nas seguintes figuras.</p>
+            <figure>
+              <img src="./media/qd.png"width="250" height="300" alt=" IRB 140 na posição qd">
+              <figcaption> Figura 7 - IRB 140 na posição qd = [0 -pi/2 pi 0 0 -pi/2]</figcaption>
+            </figure><br>
+
+            <figure>
+              <img src="./media/qr.png"width="250" height="300" alt="IRB 140 na posição qr">
+              <figcaption> Figura 8 - IRB 140 na posição qr = [0 -pi/2 pi/2 0 pi/2 -pi/2]</figcaption>
+            </figure><br>
+
+            <figure>
+              <img src="./media/qz.png"width="250" height="300" alt="IRB 140 na posição qz">
+              <figcaption> Figura 9 - IRB 140 na posição qz = [0 0 0 0 0 0]</figcaption>
+            </figure><br>
+
+            <p>As figuras anteriores foram geradas no MatLab com o auxílio do comando <strong> irb140.plot() </strong>.</p>
+
+            <p>De seguida utilizamos o comando<strong> fkine</strong> para qualquer a cinemática direta das poses anteriormente indicadas.</p>
+            <figure>
+              <img src="./media/calculo_da_cinematica_direta_de_qd.png"width="400" height="150" alt="Cálculo da cinemática direta de qd">
+              <figcaption> Figura 10 - Cálculo da cinemática direta de qd </figcaption>
+            </figure><br>
+
+            <figure>
+              <img src="./media/calculo_da_cinematica_direta_de_qr.png"width="400" height="150" alt="Cálculo da cinemática direta de qr">
+              <figcaption> Figura 11 - Cálculo da cinemática direta de qd </figcaption>
+            </figure><br>
+
+            <figure>
+              <img src="./media/calculo_da_cinematica_direta_de_qz.png"width="350" height="150" alt="Cálculo da cinemática direta de qz">
+              <figcaption> Figura 12 - Cálculo da cinemática direta de qz </figcaption>
+            </figure><br>
+
+            <p>Por último usamos o comando <strong>ikine6s</strong> computar a forma fechada da cinemática inversa.</p>
+            <figure>
+              <img src="./media/calculo_da_cinematica_inversa_de_qn.png"width="450" height="150" alt="Cálculo da cinemática inversa de qn">
+              <figcaption> Figura 13 - Cálculo da cinemática inversa de qn </figcaption>
+            </figure><br>
+
+            <figure>
+              <img src="./media/calculo_da_cinematica_inversa_de_qr.png"width="450" height="150" alt="Cálculo da cinemática inversa de qr">
+              <figcaption> Figura 14 - Cálculo da cinemática inversa de qr </figcaption>
+            </figure><br>
+
+            <figure>
+              <img src="./media/calculo_da_cinematica_inversa_de_qz.png"width="450" height="150" alt="Cálculo da cinemática inversa de qz">
+              <figcaption> Figura 15 - Cálculo da cinemática inversa de qz </figcaption>
+            </figure><br>
+
+            <p><strong> >> qzd = jtraj(qz,qd,75); </strong></p>
+            <p><strong>>> irb140.plot(qzd) </strong></p>
+            <figure>
+              <img src="./media/movimento_irb_qzd.gif" width="300" height="300" alt="mov_qzd_irb">
+              <figcaption> Figura 16 - movimento do irb 140 da posição qz = [0 0 0 0 0 0] para a posição qd = [0 -pi/2 pi 0 0 -pi/2]</figcaption>
+            </figure><br>
+
+            <p><strong> >> qzr = jtraj(qz,qr,75); </strong></p>
+            <p><strong> >> irb140.plot(qzr) </strong></p>
+            <figure>
+              <img src="./media/movimento_irb_qzr.gif" width="300" height="300" alt="mov_qzr_irb">
+              <figcaption> Figura 17 - movimentodo irb 140 da posição qz = [0 0 0 0 0 0] para a posição qr = [0 -pi/2 pi/2 0 pi/2 -pi/2]</figcaption>
+            </figure><br>
+
+            <p><strong> >> qdr = jtraj(qd,qr,75); </strong></p>
+            <p><strong> >> irb140.plot(qdr) </strong></p>
+            <figure>
+              <img src="./media/movimento_irb_qdr.gif" width="300" height="300" alt="mov_qdr_irb">
+              <figcaption> Figura 18 - movimento do irb 140 da posição qd = [0 -pi/2 pi 0 0 -pi/2] para a posição qr = [0 -pi/2 pi/2 0 pi/2 -pi/2]</figcaption>
+            </figure><br>
+			
+			<p>Para experimentarmos vários movimentos com todos os eixos do irb 140 usamos o seguinte comando:</p>
+            <p><strong>>> teach(irb140)</strong></p>
+            <figure>
+              <img src="./media/teach2.gif" width="300" height="300" alt="mov_qsr">
+              <figcaption> Figura 19 - comando teach(irb140)</figcaption>
+            </figure><br>
+			
+			<h3 id="item1-7" class="mt-5">Código MatLab</h3><br>
+			<p>>> mdl_irb140</p>
+			<p>>> teach(irb140)</p>
+			<p>>> T1 = irb140.fkine(qd)</p>
+			<p>>> T2 = irb140.fkine(qr)</p>
+			<p>>> T3 = irb.fkine(qz)</p>
+			<p>>> qni = irb140.ikine6s(T1)</p>
+			<p>>> qri = irb140.ikine6s(T2)</p>
+			<p>>> qzi = irb140.ikine6s(T3)</p>
+			<p>>> qzd = jtraj(qz,qd,75);</p>
+			<p>>> irb140.plot(qzd)</p>
+			<p>>> qzr = jtraj(qz,qr,75);</p>
+			<p>>> irb140.plot(qzr)</p>
+			<p>>> qdr = jtraj(qd,qr,75);</p>
+			<p>>> irb140.plot(qdr)</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+    <section class=" text-dark text-center py-3" style="background-color: #ebebeb "> &copy;2021 Copyright
+      <a class="text-dark" href="#"> Bruno Matos 30006804 | Bruno Silva 30003769 | David Monteiro 30003043| Nuno Barrocas 30005711 </a>
+    </section>
+
+  </footer>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./assets/script.js"></script>
+
+</body>
+
+</html>
